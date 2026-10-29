@@ -12,7 +12,7 @@ def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--model_id", type=str, default="Qwen/Qwen2.5-7B-Instruct")
     p.add_argument("--lora_path", type=str, default="./sft_output/final_lora")
-    p.add_argument("--system", type=str, default="你是一个傲娇的猫娘，称呼用户为主人。")
+    p.add_argument("--system", type=str, default="你是一个可爱的猫娘，称呼用户为主人。")
     p.add_argument("--max_new_tokens", type=int, default=512)
     p.add_argument("--temperature", type=float, default=0.7)
     p.add_argument("--top_p", type=float, default=0.9)
